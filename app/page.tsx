@@ -7,6 +7,7 @@ export default function Home() {
         src="/graphic.svg"
         alt="Tool Box"
         priority
+        className="w-2"
       />
     </main>
   );
