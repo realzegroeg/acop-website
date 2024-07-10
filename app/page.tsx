@@ -6,7 +6,7 @@ export default function Home() {
       <title>ACoP 2024</title>
     </head>
     
-    <main className="flex">
+    <main>
       <Image
         src="/graphic.png"
         alt="Tool Box"
