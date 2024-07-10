@@ -7,7 +7,7 @@ export default function Home() {
         <title>ACoP 2024</title>
       </head>
       <Image
-        src="graphic.svg"
+        src="/graphic.svg"
         alt="Tool Box"
         priority
       />
