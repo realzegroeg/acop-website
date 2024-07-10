@@ -9,7 +9,6 @@ export default function Home() {
       <Image
         src="graphic.svg"
         alt="Tool Box"
-        class="center"
         priority
       />
     </main>
