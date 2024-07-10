@@ -2,11 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <head>
-      <title>ACoP 2024</title>
-    </head>
-    
     <main>
+      <head>
+        <title>ACoP 2024</title>
+      </head>
       <Image
         src="/graphic.png"
         alt="Tool Box"
