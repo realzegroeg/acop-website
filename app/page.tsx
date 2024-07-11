@@ -1,28 +1,9 @@
 import React from 'react';
 
 const ToolBox = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-      setWindowHeight(window.innerHeight);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-  
   return (
     <div className="h-screen overflow-hidden bg-white">
-      <svg width="100%" height="100%">
-        <rect 
-          x={(windowWidth - 100) / 2} // Center horizontally
-          y={windowHeight * 0.9} // 90% of the screen height from the top
-          width={100}
-          height={50}
-          fill="blue"  
-        />
-      </svg>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FQVSMCgC3XusaNBWDClp6uT%2FAPoC-Website-Design%3Fnode-id%3D1-2%26t%3DWGxEqpfQUSGtVAnx-1" allowfullscreen></iframe>
     </div>
   );
 };
