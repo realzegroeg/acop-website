@@ -2,7 +2,7 @@ import React from 'react';
 
 const ToolBox = () => {
   return (
-    <div className="h-screen overflow-hidden>
+    <div className="h-screen overflow-hidden bg-white>
       <svg width="100%" height="100%">
 
         <rect x="10" y="10" width="50" height="50" fill="blue" />
