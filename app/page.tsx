@@ -67,7 +67,7 @@ const ToolBox = () => {
       const y = e.clientY - rect.offsetTop;
 
       setCurrentShape((prevShape) => ({
-        ...prevShape,
+        ...prevShape, // This spreads the existing properties
         width: x - prevShape.x,
         height: y - prevShape.y,
       }));
