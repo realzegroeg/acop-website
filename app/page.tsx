@@ -66,11 +66,19 @@ const ToolBox = () => {
       const x = e.clientX - rect.offsetLeft;
       const y = e.clientY - rect.offsetTop;
 
-      setCurrentShape((prevShape) => ({
-        ...prevShape, // This spreads the existing properties
-        width: x - prevShape.x,
-        height: y - prevShape.y,
-      }));
+      setCurrentShape((prevShape) => {
+        if (!prevShape) return prevShape; // Handle case where prevShape is null
+
+        return {
+          // Ensure all properties are included
+          type: prevShape.type,
+          x: prevShape.x,
+          y: prevShape.y,
+          width: x - prevShape.x,
+          height: y - prevShape.y,
+          color: prevShape.color,
+        };
+      });
     }
   };
 
