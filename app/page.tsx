@@ -1,130 +1,205 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-type Shape = {
-  type: 'rect' | 'line';
-  x: number;
-  y: number;
-  width: number;
-  height: number;
-  color: string;
-};
-
-const ToolBox = () => {
-  const [shapes, setShapes] = useState<Shape[]>([]);
-  const [selectedTool, setSelectedTool] = useState<'rect' | 'line' | null>(null);
-  const [isDrawing, setIsDrawing] = useState(false);
-  const [currentShape, setCurrentShape] = useState<Shape | null>(null);
-  const [generatedCode, setGeneratedCode] = useState('');
-
-  useEffect(() => {
-    const generateCode = () => {
-      let html = '<div>';
-      shapes.forEach((shape) => {
-        if (shape.type === 'rect') {
-          html += `<div 
-                    style="position: absolute;
-                           left: ${shape.x}px;
-                           top: ${shape.y}px;
-                           width: ${shape.width}px;
-                           height: ${shape.height}px;
-                           background-color: ${shape.color};"
-                  ></div>`;
-        } else if (shape.type === 'line') {
-          // TODO: Implement line code generation
-          // You'll likely need to calculate the line's angle and use CSS transforms
-        }
-      });
-      html += '</div>';
-      setGeneratedCode(html);
-    };
-    generateCode();
-  }, [shapes]);
-
-  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.target as HTMLDivElement;
-    const x = e.clientX - rect.offsetLeft;
-    const y = e.clientY - rect.offsetTop;
-
-    if (selectedTool === 'rect') {
-      setIsDrawing(true);
-      setCurrentShape({
-        type: 'rect',
-        x,
-        y,
-        width: 0,
-        height: 0,
-        color: '#000000', // Default color
-      });
-    }
-  };
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (isDrawing && currentShape) {
-      const rect = e.target as HTMLDivElement;
-      const x = e.clientX - rect.offsetLeft;
-      const y = e.clientY - rect.offsetTop;
-
-      setCurrentShape((prevShape) => {
-        if (!prevShape) return prevShape; // Handle case where prevShape is null
-
-        return {
-          // Ensure all properties are included
-          type: prevShape.type,
-          x: prevShape.x,
-          y: prevShape.y,
-          width: x - prevShape.x,
-          height: y - prevShape.y,
-          color: prevShape.color,
-        };
-      });
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsDrawing(false);
-    if (currentShape) {
-      setShapes([...shapes, currentShape]);
-      setCurrentShape(null);
-    }
-  };
-
+const Picture = () => {
   return (
-    <div className="h-screen overflow-hidden bg-white flex flex-col items-center">
-      <div
-        className="w-full h-full relative"
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
+    <div className="picture-container" style={{ backgroundColor: 'white' }}> 
+      <div 
+        className="shape rectangle"
+        style={{
+          position: 'absolute',
+          left: '50%',
+          top: '80%', // Slightly lower
+          transform: 'translateX(-50%)',
+          width: '110px', // Slightly wider
+          height: '55px', // Slightly taller
+          backgroundColor: '#808080', // Grey
+        }}
+      ></div>
+
+      {/* Circle 1 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '70px',
+          top: '120px',
+          width: '70px', // Larger
+          height: '70px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
       >
-        {shapes.map((shape, index) => (
-          <div
-            key={index}
-            style={{
-              position: 'absolute',
-              left: shape.x,
-              top: shape.y,
-              width: shape.width,
-              height: shape.height,
-              backgroundColor: shape.color,
-            }}
-          />
-        ))}
       </div>
 
-      <div className="mt-4">
-        <button onClick={() => setSelectedTool('rect')}>Rectangle</button>
-        <button onClick={() => setSelectedTool('line')}>Line</button>
-        <button onClick={() => setSelectedTool(null)}>Select</button>
+      {/* Circle 2 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '300px', // Further right
+          top: '100px', // Higher
+          width: '50px', // Larger
+          height: '50px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
       </div>
 
-      <div className="mt-4">
-        <h2>Generated Code:</h2>
-        <pre>{generatedCode}</pre>
+      {/* Circle 3 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '195px', // Further right
+          top: '210px',
+          width: '60px', // Larger
+          height: '60px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
       </div>
+
+      {/* Circle 4 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '150px',
+          top: '90px',
+          width: '40px', // Larger
+          height: '40px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+
+      {/* Circle 5 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '350px', // Further right
+          top: '150px', // Higher
+          width: '50px', // Larger
+          height: '50px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+
+      {/* Circle 6 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '270px', // Further right
+          top: '245px',
+          width: '45px', // Larger
+          height: '45px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+
+      {/* Circle 7 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '120px',
+          top: '200px',
+          width: '55px', // Larger
+          height: '55px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+
+      {/* Circle 8 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '165px',
+          top: '145px',
+          width: '48px', // Larger
+          height: '48px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+
+      {/* Circle 9 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '270px', // Further right
+          top: '170px',
+          width: '52px', // Larger
+          height: '52px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+
+      {/* Circle 10 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '335px',
+          top: '220px',
+          width: '70px', // Larger
+          height: '70px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+
+      {/* Circle 11 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '210px',
+          top: '70px',
+          width: '80px', // Larger
+          height: '80px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+
+      {/* Circle 12 */}
+      <div 
+        className="shape circle"
+        style={{
+          position: 'absolute',
+          left: '370px', // Further right
+          top: '90px',
+          width: '40px', // Larger
+          height: '40px', // Larger
+          borderRadius: '50%',
+          backgroundColor: '#FFD700', // Golden
+        }}
+      >
+      </div>
+      
     </div>
   );
 };
 
-export default ToolBox;
+export default Picture;
