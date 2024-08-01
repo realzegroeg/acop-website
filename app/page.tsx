@@ -4,200 +4,258 @@ import React from 'react';
 
 const Picture = () => {
   return (
-    <div className="picture-container" style={{ backgroundColor: 'white' }}> 
+    <div className="picture-container"> 
       <div 
         className="shape rectangle"
         style={{
           position: 'absolute',
           left: '50%',
-          top: '80%', // Slightly lower
+          top: '85%', 
           transform: 'translateX(-50%)',
-          width: '110px', // Slightly wider
-          height: '55px', // Slightly taller
-          backgroundColor: '#808080', // Grey
+          width: '130px', 
+          height: '65px', 
         }}
       ></div>
 
       {/* Circle 1 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '20%', // Relative to the viewport width
-          top: '15%', // Relative to the viewport height
-          width: '7vw', // 7% of the viewport width
-          height: '7vw', // 7% of the viewport width
+          left: '15%', 
+          top: '10%', 
+          width: '12vw', 
+          height: '12vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 1 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 2 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '70%', // Relative to the viewport width
-          top: '10%', // Relative to the viewport height
-          width: '5vw', // 5% of the viewport width
-          height: '5vw', // 5% of the viewport width
+          left: '65%', 
+          top: '5%', 
+          width: '10vw', 
+          height: '10vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 2 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 3 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '40%', // Relative to the viewport width
-          top: '30%', // Relative to the viewport height
-          width: '6vw', // 6% of the viewport width
-          height: '6vw', // 6% of the viewport width
+          left: '35%', 
+          top: '25%', 
+          width: '11vw', 
+          height: '11vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 3 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 4 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '30%', // Relative to the viewport width
-          top: '10%', // Relative to the viewport height
-          width: '4vw', // 4% of the viewport width
-          height: '4vw', // 4% of the viewport width
+          left: '25%', 
+          top: '5%', 
+          width: '8vw', 
+          height: '8vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 4 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 5 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '75%', // Relative to the viewport width
-          top: '20%', // Relative to the viewport height
-          width: '5vw', // 5% of the viewport width
-          height: '5vw', // 5% of the viewport width
+          left: '75%', 
+          top: '15%', 
+          width: '9vw', 
+          height: '9vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 5 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 6 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '60%', // Relative to the viewport width
-          top: '40%', // Relative to the viewport height
-          width: '4.5vw', // 4.5% of the viewport width
-          height: '4.5vw', // 4.5% of the viewport width
+          left: '55%', 
+          top: '35%', 
+          width: '8.5vw', 
+          height: '8.5vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 6 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 7 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '25%', // Relative to the viewport width
-          top: '30%', // Relative to the viewport height
-          width: '5.5vw', // 5.5% of the viewport width
-          height: '5.5vw', // 5.5% of the viewport width
+          left: '20%', 
+          top: '30%', 
+          width: '9.5vw', 
+          height: '9.5vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 7 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 8 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '35%', // Relative to the viewport width
-          top: '20%', // Relative to the viewport height
-          width: '4.8vw', // 4.8% of the viewport width
-          height: '4.8vw', // 4.8% of the viewport width
+          left: '30%', 
+          top: '20%', 
+          width: '8.8vw', 
+          height: '8.8vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 8 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 9 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '60%', // Relative to the viewport width
-          top: '25%', // Relative to the viewport height
-          width: '5.2vw', // 5.2% of the viewport width
-          height: '5.2vw', // 5.2% of the viewport width
+          left: '55%', 
+          top: '20%', 
+          width: '9.2vw', 
+          height: '9.2vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 9 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 10 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '70%', // Relative to the viewport width
-          top: '35%', // Relative to the viewport height
-          width: '7vw', // 7% of the viewport width
-          height: '7vw', // 7% of the viewport width
+          left: '65%', 
+          top: '30%', 
+          width: '10vw', 
+          height: '10vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 10 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 11 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '45%', // Relative to the viewport width
-          top: '5%', // Relative to the viewport height
-          width: '8vw', // 8% of the viewport width
-          height: '8vw', // 8% of the viewport width
+          left: '40%', 
+          top: '0%', 
+          width: '11vw', 
+          height: '11vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 11 clicked!');
         }}
       >
-      </div>
+      </button>
 
       {/* Circle 12 */}
-      <div 
+      <button 
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '80%', // Relative to the viewport width
-          top: '10%', // Relative to the viewport height
-          width: '4vw', // 4% of the viewport width
-          height: '4vw', // 4% of the viewport width
+          left: '75%', 
+          top: '5%', 
+          width: '7vw', 
+          height: '7vw', 
           borderRadius: '50%',
-          backgroundColor: '#FFD700', // Golden
+          backgroundColor: '#FFD700', 
+          border: 'none', 
+          cursor: 'pointer', 
+        }}
+        onClick={() => {
+          console.log('Circle 12 clicked!');
         }}
       >
-      </div>
-
+      </button>
     </div>
   );
 };
