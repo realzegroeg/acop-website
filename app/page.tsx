@@ -14,7 +14,7 @@ const Picture = () => {
           transform: 'translateX(-50%)',
           width: '110px', // Slightly wider
           height: '55px', // Slightly taller
-          // backgroundColor: '#808080', // Grey
+          backgroundColor: '#808080', // Grey
         }}
       ></div>
 
