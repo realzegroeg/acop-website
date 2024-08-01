@@ -1,7 +1,5 @@
 'use client'
-
 import React from 'react';
-
 const Picture = () => {
   return (
     <div className="picture-container"> 
@@ -16,14 +14,13 @@ const Picture = () => {
           height: '65px', 
         }}
       ></div>
-
       {/* Circle 1 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '15%', 
-          top: '10%', 
+          top: '5%', 
           width: '12vw', 
           height: '12vw', 
           borderRadius: '50%',
@@ -36,14 +33,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 2 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '65%', 
-          top: '5%', 
+          top: '10%', 
           width: '10vw', 
           height: '10vw', 
           borderRadius: '50%',
@@ -56,14 +52,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 3 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '35%', 
-          top: '25%', 
+          top: '35%', 
           width: '11vw', 
           height: '11vw', 
           borderRadius: '50%',
@@ -76,14 +71,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 4 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '25%', 
-          top: '5%', 
+          top: '15%', 
           width: '8vw', 
           height: '8vw', 
           borderRadius: '50%',
@@ -96,14 +90,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 5 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '75%', 
-          top: '15%', 
+          top: '25%', 
           width: '9vw', 
           height: '9vw', 
           borderRadius: '50%',
@@ -116,14 +109,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 6 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '55%', 
-          top: '35%', 
+          top: '45%', 
           width: '8.5vw', 
           height: '8.5vw', 
           borderRadius: '50%',
@@ -136,14 +128,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 7 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '20%', 
-          top: '30%', 
+          top: '40%', 
           width: '9.5vw', 
           height: '9.5vw', 
           borderRadius: '50%',
@@ -156,14 +147,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 8 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '30%', 
-          top: '20%', 
+          top: '30%', 
           width: '8.8vw', 
           height: '8.8vw', 
           borderRadius: '50%',
@@ -176,14 +166,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 9 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '55%', 
-          top: '20%', 
+          top: '30%', 
           width: '9.2vw', 
           height: '9.2vw', 
           borderRadius: '50%',
@@ -196,14 +185,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 10 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '65%', 
-          top: '30%', 
+          top: '40%', 
           width: '10vw', 
           height: '10vw', 
           borderRadius: '50%',
@@ -216,14 +204,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 11 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '40%', 
-          top: '0%', 
+          top: '10%', 
           width: '11vw', 
           height: '11vw', 
           borderRadius: '50%',
@@ -236,14 +223,13 @@ const Picture = () => {
         }}
       >
       </button>
-
       {/* Circle 12 */}
       <button 
         className="shape circle"
         style={{
           position: 'absolute',
           left: '75%', 
-          top: '5%', 
+          top: '15%', 
           width: '7vw', 
           height: '7vw', 
           borderRadius: '50%',
@@ -259,5 +245,4 @@ const Picture = () => {
     </div>
   );
 };
-
 export default Picture;
