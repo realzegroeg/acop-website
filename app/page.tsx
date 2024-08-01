@@ -23,10 +23,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '70px',
-          top: '120px',
-          width: '70px', // Larger
-          height: '70px', // Larger
+          left: '20%', // Relative to the viewport width
+          top: '15%', // Relative to the viewport height
+          width: '7vw', // 7% of the viewport width
+          height: '7vw', // 7% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -38,10 +38,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '300px', // Further right
-          top: '100px', // Higher
-          width: '50px', // Larger
-          height: '50px', // Larger
+          left: '70%', // Relative to the viewport width
+          top: '10%', // Relative to the viewport height
+          width: '5vw', // 5% of the viewport width
+          height: '5vw', // 5% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -53,10 +53,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '195px', // Further right
-          top: '210px',
-          width: '60px', // Larger
-          height: '60px', // Larger
+          left: '40%', // Relative to the viewport width
+          top: '30%', // Relative to the viewport height
+          width: '6vw', // 6% of the viewport width
+          height: '6vw', // 6% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -68,10 +68,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '150px',
-          top: '90px',
-          width: '40px', // Larger
-          height: '40px', // Larger
+          left: '30%', // Relative to the viewport width
+          top: '10%', // Relative to the viewport height
+          width: '4vw', // 4% of the viewport width
+          height: '4vw', // 4% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -83,10 +83,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '350px', // Further right
-          top: '150px', // Higher
-          width: '50px', // Larger
-          height: '50px', // Larger
+          left: '75%', // Relative to the viewport width
+          top: '20%', // Relative to the viewport height
+          width: '5vw', // 5% of the viewport width
+          height: '5vw', // 5% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -98,10 +98,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '270px', // Further right
-          top: '245px',
-          width: '45px', // Larger
-          height: '45px', // Larger
+          left: '60%', // Relative to the viewport width
+          top: '40%', // Relative to the viewport height
+          width: '4.5vw', // 4.5% of the viewport width
+          height: '4.5vw', // 4.5% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -113,10 +113,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '120px',
-          top: '200px',
-          width: '55px', // Larger
-          height: '55px', // Larger
+          left: '25%', // Relative to the viewport width
+          top: '30%', // Relative to the viewport height
+          width: '5.5vw', // 5.5% of the viewport width
+          height: '5.5vw', // 5.5% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -128,10 +128,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '165px',
-          top: '145px',
-          width: '48px', // Larger
-          height: '48px', // Larger
+          left: '35%', // Relative to the viewport width
+          top: '20%', // Relative to the viewport height
+          width: '4.8vw', // 4.8% of the viewport width
+          height: '4.8vw', // 4.8% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -143,10 +143,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '270px', // Further right
-          top: '170px',
-          width: '52px', // Larger
-          height: '52px', // Larger
+          left: '60%', // Relative to the viewport width
+          top: '25%', // Relative to the viewport height
+          width: '5.2vw', // 5.2% of the viewport width
+          height: '5.2vw', // 5.2% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -158,10 +158,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '335px',
-          top: '220px',
-          width: '70px', // Larger
-          height: '70px', // Larger
+          left: '70%', // Relative to the viewport width
+          top: '35%', // Relative to the viewport height
+          width: '7vw', // 7% of the viewport width
+          height: '7vw', // 7% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -173,10 +173,10 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '210px',
-          top: '70px',
-          width: '80px', // Larger
-          height: '80px', // Larger
+          left: '45%', // Relative to the viewport width
+          top: '5%', // Relative to the viewport height
+          width: '8vw', // 8% of the viewport width
+          height: '8vw', // 8% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
@@ -188,16 +188,16 @@ const Picture = () => {
         className="shape circle"
         style={{
           position: 'absolute',
-          left: '370px', // Further right
-          top: '90px',
-          width: '40px', // Larger
-          height: '40px', // Larger
+          left: '80%', // Relative to the viewport width
+          top: '10%', // Relative to the viewport height
+          width: '4vw', // 4% of the viewport width
+          height: '4vw', // 4% of the viewport width
           borderRadius: '50%',
           backgroundColor: '#FFD700', // Golden
         }}
       >
       </div>
-      
+
     </div>
   );
 };
