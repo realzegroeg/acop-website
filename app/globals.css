@@ -31,3 +31,20 @@ body {
     text-wrap: balance;
   }
 }
+
+.picture-container {
+  background-color: white;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.shape {
+  position: absolute;
+}
+.rectangle {
+  background-color: #808080;
+}
+.circle {
+  border-radius: 50%;
+  background-color: #FFD700;
+}
